@@ -7,7 +7,7 @@ import foodsList from '../food';
   styleUrls: ['./food-list.component.css']
 })
 export class FoodListComponent implements OnInit {
-  food: Object[];
+  foods: Object[];
   myList: {
     name: string;
     calories: number;

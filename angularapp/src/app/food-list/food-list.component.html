@@ -1,37 +1,36 @@
 <div class="foods">
-    <div class="search-box">
+    <div class="search-Box">
         <label for="searchBox">Search</label>
         <input id="searchBox" type="text" [(ngModel)]="pattern">
     </div>
 
-    <div class="new-food">
-        <button (click)="enableUserToAddFood()" id ="newFood">Add New Food</button>
+    <div class="new-Food">
+        <button  (click)="newFood()" id ="newFood" class="newFood">Add New Food</button>
         <br>
-        <div *ngIf="isEditing">
+        <br>
+        <div >
             <div>
                 <br>
                 <label for="new-food-name">Name</label>
-                <input type="text" id = "name" [(ngModel)]="newFoodName">
+                <input type="text" id="name" [(ngModel)]="newFoodName">
                 <br> <br>
             </div>
             <div>
                 <label for="new-food-calories">Calories</label>
-                <input type="text" id = "calories" [(ngModel)]="newFoodCalories">
+                <input type="text" id="calories" [(ngModel)]="newFoodCalories">
                 <br> <br>
             </div>
             <div>
                 <label for="new-food-name">Image</label>
-                <input type="text" id = "image" [(ngModel)]="newFoodImage">
+                <input type="text" id="image" [(ngModel)]="newFoodImage">
                 <br> <br>
             </div>
-
-            <button (click)="newFood()" class="new-food-button">Add Food</button>
         </div>
     </div>
 
-    <ul class="food-list">
-        <li id="displayContainer" *ngIf="isEditing">
-            <img [src]="newFoodImage" alt="">
+    <ul class="food-list" id ="displayContainer">
+        <li class="single-food" *ngIf="isEditing">
+            <img [src]="newFoodImage">
             <h3 class="food-name">
                 {{ newFoodName }}
                 <small class="food-calories">{{ newFoodCalories }}</small>
@@ -40,8 +39,8 @@
 
 
 
-        <li id ="displayContainer" *ngFor="let food of foods | foodSearch:'name':pattern;">
-            <img [src]="food.image" alt="">
+        <li class="single-food" *ngFor="let food of foods | foodSearch:'name':pattern;">
+            <img [src]="food.image">
 
             <h3 class="food-name">
                 {{ food.name }}
