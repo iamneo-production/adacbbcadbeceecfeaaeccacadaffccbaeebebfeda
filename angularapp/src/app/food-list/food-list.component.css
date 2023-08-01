@@ -1,56 +1,56 @@
-.search-Box {
+.search-box {
     width: 50%;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 25px;
 }
 
-.search-Box>* {
+.search-box>* {
     width: 100%;
     display: block;
 }
 
-.search-Box label {
+.search-box label {
     margin-bottom: 5px;
 }
 
-.searchBox {
+.food-list {
     list-style: none;
     padding: 0;
     width: 100%;
 }
 
-.single-food {
+#displayContainer {
     display: block;
     text-align: center;
     margin-bottom: 50px;
     height: 150px;
-    background-color: rgb(0, 0, 35,0.021);
+    background-color: rgb(156, 154, 154);
     padding: 10px;
-    border: 1px solid rgba(19, 19, 20, 0.136)
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.single-food h3 {
+#displayContainer h3 {
     font-size: 1em;
 }
 
-.single-food .food-calories {
+#displayContainer .food-calories {
     font-size: 1.2em;
     color: rgba(238, 58, 34, 0.925);
 }
 
-.single-food img {
+#displayContainer img {
     width: 25%;
     height: 150px;
     float: left;
     border-radius: 50%;
 }
 
-.new-Food {
+.new-food {
     overflow: auto;
 }
 
-.newFood {
+.new-food-button {
     float: left;
     width: 30%;
     display: block;
