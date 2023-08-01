@@ -1,14 +1,14 @@
 const foods: Object[] = [
   {
-    name: 'Rice (Brown)',
-    calories: 340,
-    image: 'https://thumbs.dreamstime.com/b/rice-grain-22274736.jpg',
+    name: 'Apple',
+    calories: 52,
+    image: 'https://png.pngtree.com/png-vector/20210522/ourmid/pngtree-apple-is-naturally-thirsty-and-healthy-png-image_3323218.jpg',
     quantity: 0
   },
   {
-    name: 'Apple',
+    name: 'Cashew nut',
     calories: 560,
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/847px-Red_Apple.jpg',
+    image: 'https://wallpapercave.com/wp/wp4659249.png',
     quantity: 0
   },
   {
